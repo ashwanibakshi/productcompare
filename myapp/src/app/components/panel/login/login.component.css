@@ -1,0 +1,22 @@
+/* @import 'https://getbootstrap.com/docs/4.3/examples/sign-in/signin.css';
+
+.text-center{
+    display: table;
+}
+.form-signin{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+} */
+#parent {
+    display: table;
+    width:auto;
+    margin-left: 40%;
+    margin-top:10%;
+ }
+ #form_login {
+    
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+ }

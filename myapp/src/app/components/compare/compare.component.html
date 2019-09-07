@@ -1,0 +1,60 @@
+<div class="t1">
+<table>
+  <tbody>
+    <tr>
+      <td>image</td>
+      <td><img src="../../../assets/product.jpg" style="width:150px; height:150px;"></td>
+    </tr>
+    <tr>
+      <td style="font-size:20px;padding-right:10px;">pname</td>
+      <td>  {{prodct.pname}}</td>
+    </tr>
+    <tr>
+      <td>details</td>
+      <td>
+          {{prodct.pdesc}}
+      </td>
+    </tr>
+    <tr>
+      <td>price</td>
+      <td>
+          {{prodct.price}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div class="t2">
+  <div>
+    <label for="name">Select Product to compare</label>
+    <select name="namee" id="namee" (change)="getpname(data)" [(ngModel)]="data">
+     <option *ngFor="let a of pname" value={{a}}>{{a}}</option>
+    </select>
+  </div>
+  <table *ngIf="cprod" style="margin-top:10px;">
+    <tbody>
+      <tr>
+        <td>image</td>
+        <td><img src="../../../assets/product.jpg" style="width:150px; height:150px;"></td>
+      </tr>
+      <tr>
+        <td>name</td>
+        <td>{{cprod[0].pname}}</td>
+      </tr>
+      <tr>
+        <td>details</td>
+        <td>
+            {{cprod[0].pdesc}}
+        </td>
+      </tr>
+      <tr>
+        <td>price</td>
+        <td>
+            {{cprod[0].price}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  
