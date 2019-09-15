@@ -1,0 +1,17 @@
+<div id="parent">
+  <form id="form_login" #myform="ngForm" (submit)="register(myform)">
+   <!--form content here-->
+   <h1 class="h3 mb-3 font-weight-normal">Please Register</h1>
+   <label for="username" class="sr-only">Enter The Name</label>
+   <input type="text" name="user" [(ngModel)]="userr" #users="ngModel"  class="form-control" placeholder="enter name" required> 
+   <span *ngIf="users.errors && (users.dirty||users.touched)">Fill Data</span>
+  <label for="inputEmail" class="sr-only">Email address</label>
+  <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" [(ngModel)]="ds" #emails="ngModel">
+  <span class="danger" *ngIf="emails.errors && (emails.dirty || emails.touched)">Fill Data </span>
+  <label for="inputPassword" class="sr-only">Password</label>
+  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required name="password" [(ngModel)]="da" #passwords="ngModel">
+  <span class="danger" *ngIf="passwords.errors && ( passwords.dirty||passwords.touched)">Fill Data</span><br>
+  <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!myform.valid">Register</button>
+
+  </form>
+</div>        

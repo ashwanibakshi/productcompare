@@ -6,6 +6,7 @@ import { CompareComponent } from './components/compare/compare.component';
 import { DashboardComponent } from './components/panel/dashboard/dashboard.component';
 import { LoginComponent } from './components/panel/login/login.component';
 import { AuthGuard } from './guard/auth.guard';
+import { RegisterComponent } from './components/panel/register/register.component';
 
 const routes: Routes = [
  {path:'home',children:
@@ -17,7 +18,8 @@ const routes: Routes = [
  },
  {path:'admin',children:[
    {path:'login',component:LoginComponent},
-   {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuard] }
+   {path:'dashboard',component:DashboardComponent,canActivate:[AuthGuard] },
+   {path:'register',component:RegisterComponent}
  ]
 },
  {path:'',redirectTo:'/home/index',pathMatch:'full'}

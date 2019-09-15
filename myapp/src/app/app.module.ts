@@ -13,6 +13,7 @@ import { DashboardComponent } from './components/panel/dashboard/dashboard.compo
 import { HeadfootComponent } from './components/headfoot/headfoot.component';
 import { LoginComponent } from './components/panel/login/login.component';
 import { AuthGuard } from './guard/auth.guard';
+import { RegisterComponent } from './components/panel/register/register.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AuthGuard } from './guard/auth.guard';
     CompareComponent,
     DashboardComponent,
     HeadfootComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,

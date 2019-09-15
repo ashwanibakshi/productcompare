@@ -11,6 +11,7 @@ export class DataService {
   constructor(private httpSevice:HttpClient) { }
 
  adduser(a){
+   alert('add')
    return this.httpSevice.post('http://localhost:3000/api/user/add',a);
  }
 
