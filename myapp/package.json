@@ -23,7 +23,7 @@
     "@kolkov/angular-editor": "^0.8.6",
     "angular2-jwt": "^0.2.3",
     "core-js": "^2.5.4",
-    "froala-editor": "^3.0.5",
+    "froala-editor": "^4.0.7",
     "jwt-decode": "^2.2.0",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.5.3",
